@@ -1,0 +1,53 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forecast</title>
+	
+	<link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body class="sky">
+	<!-- your single-location forecast interface here -->
+    <div class="container-fluid">
+      <div class="row">
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <img src="/static/weather/images/location.png" class="location">
+          </div>
+          <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+            <img src="/static/weather/images/search_icon.png" class="location">
+          </div>
+          <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+            <form>
+              <input type="text" size=40></input>
+             </form>
+          </div>
+      </div>
+    </div>
+  
+  <div class="container-fluid">
+    <a href="/weather/comparison"><img src="/static/weather/images/large_sun.png" class="centered-image"></a>
+    <!-- <div class="degree_centered">70&#176F</div> -->
+    <div class="inner"><h1 class="title">70&#176F</h1></div>
+    <div class="inner"><h1 class="title">Berkeley, CA</h1></div>
+    <div class="inner"><h2 class="title">12:00PM</h2></div>
+  </div>
+   
+  
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <ul>
+        <li>Precipitation: 0%</li>
+        <li>Humidity: 79%</li>
+        <li>Wind: 8mph</li>
+        </ul>
+      </div>
+  </div>
+  </div>
+  
+</body>
+</html>
+

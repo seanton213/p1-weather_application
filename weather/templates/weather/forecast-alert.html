@@ -1,0 +1,42 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forecast - Alert!</title>
+	
+	<link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
+
+</head>
+<body class="alert">
+	<!-- your single-location forecast with alert interface here -->
+    <div class="container-fluid">
+      <div class="row">
+          <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11"></div>
+          <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+            <a href="/weather/forecast"><img src="/static/weather/images/x.png" id="closeout"></a>
+          </div>
+      </div>
+    </div>
+    
+  <div class="container-fluid" id="alertgap"></div>
+  
+  <div class="container-fluid">
+      <div class="inner">
+        <h1 class="title bigtext">Berkeley, CA</h1>
+      </div>
+      <div class="inner"><img src="/static/weather/images/cloudwithlightningbolt.png" class="centered-image"></div>
+      <div class="inner"><h1 class="bigtext" id="warning">Warning!</div>
+      <div class="inner"><h1 class="bigtext">Severe Storm!</div>
+      <div class="inner"><h1 class="bigtext">2:00PM</div>
+      <div class="inner"><h1 class="bigtext">60&#176F</div>
+  </div>
+  
+</body>
+</html>
+
+
+
+
+
